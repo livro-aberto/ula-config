@@ -1,0 +1,220 @@
+
+\RequirePackage{colortbl}
+\RequirePackage{ifthen}
+\RequirePackage[export]{adjustbox}
+\RequirePackage{xparse}% For RenewDocumentEnvironment
+\RequirePackage{tcolorbox} %Allow those nice environments
+\RequirePackage{titling} % needed to manage with the title
+\RequirePackage{eso-pic }% to the cover style
+\RequirePackage{fouriernc} % Use the New Century Schoolbook font to the cover
+\RequirePackage{tikz}
+  \usetikzlibrary{intersections, positioning, fit, backgrounds, shapes, fadings,
+  decorations.pathmorphing, graphs, quotes, angles, calc, through, backgrounds}
+
+%\definecolor{default}{RGB}{203,231,100}
+%\definecolor{primary}{RGB}{28,19,15}
+\definecolor{secondary}{RGB}{240,234,224}
+\definecolor{secondarytitulo}{RGB}{220,214,204}
+%\definecolor{light}{RGB}{240,234,224}
+%\definecolor{cloudcolor}{RGB}{203,231,100}
+\definecolor{professor}{RGB}{248,248,255}
+\definecolor{professortitulo}{RGB}{228,228,235}
+
+\tcbuselibrary{skins,breakable}
+
+\newcommand{\sphinxlogo}{}
+\renewcommand{\releasename}{ensino médio - versão \version}
+\makeindex
+
+\newcommand{\listofauthors}{{\scshape\large  EDUARDO WAGNER \\ EZEQUIEL CHEQUES \\ FABIO SIMAS \\FLÁVIA LANDIM \\ GLADSON ANTUNES \\ HUMBERTO BORTOLOSSI  \\ LHAYLLA CRISSAFF \\ MARCOS PAULO ARAÚJO \\ MICHEL CAMBRAINHA \\ VANESSA MATOS}}
+\newcommand{\listofreferees}{{\scshape\large CYDARA RIPOLL \\ LETÍCIA RANGEL}}
+\renewcommand{\version}{0.1}
+
+
+\newtcolorbox{primarybox}[2][]{
+  colback=professor,
+  arc=0mm,
+%  drop fuzzy shadow,
+  title=\normalsize\uppercase{#2}\phantom{\huge{Ag}},
+  left=3mm,
+  coltitle=black,
+  right=3mm,
+  top=2mm,
+  bottom=3mm,
+  before=,
+  fonttitle=\sf,
+  colbacktitle=professortitulo,
+  width=\linewidth,
+  enhanced,
+  frame hidden,
+  titlerule=.01pt,
+  #1
+}
+
+\newtcolorbox{secondarybox}[2][]{
+  colback=secondary,
+  arc=4mm,
+%  drop fuzzy shadow,
+  title=\normalsize\uppercase{#2}\phantom{\huge{Ag}},
+  left=5mm,
+  coltitle=black,
+  right=5mm,
+  top=2mm,
+  bottom=5mm,
+  before=,
+  fonttitle=\large\bf\sf,
+  colbacktitle=secondarytitulo,
+  width=\linewidth,
+  enhanced,
+  frame hidden,
+  titlerule=.01pt,
+  coltext=black,
+  #1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RenewDocumentEnvironment{sphinxadmonition}{+m+m} %redefining the sphinx default environment for .. admonition::
+{    
+\ifthenelse{\equal{#2}{Para o professor}} % if Para o professor, use the style below
+     {
+	\begin{primarybox}[breakable]{#2}
+     }
+     {
+     \ifthenelse{\equal{#2}{Resposta}}% if Resposta, use the style below
+     {
+	\begin{primarybox}[breakable]{#2}
+     }
+     {     
+	\begin{secondarybox}[breakable]{#2}% if something else, use this style 
+     }
+     }
+}
+{ 
+\ifthenelse{\equal{#2}{Para o professor}} % should close the environment in the right way
+     {
+	\end{primarybox}
+     }
+     {
+     \ifthenelse{\equal{#2}{Resposta}}% if Resposta, use the style below
+     {
+	\end{primarybox}
+     }
+     {     
+	\end{secondarybox}
+     }
+     }
+}
+% Title definitions
+
+\newcommand{\sphinxlogo}{}
+%\renewcommand{\releasename}{ensino médio - versão \version}
+\makeindex
+
+\newcommand{\listofauthors}{{\scshape\large  EDUARDO WAGNER \\ EZEQUIEL CHEQUES \\ FABIO SIMAS \\FLÁVIA LANDIM \\ GLADSON ANTUNES \\ HUMBERTO BORTOLOSSI  \\ LHAYLLA CRISSAFF \\ MARCOS PAULO ARAÚJO \\ MICHEL CAMBRAINHA \\ VANESSA MATOS}}
+\newcommand{\listofreferees}{{\scshape\large CYDARA RIPOLL \\ LETÍCIA RANGEL}}
+%\renewcommand{\version}{0.1}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\maketitle}{
+		\begin{titlepage} % Suppresses headers and footers on the title page
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw[line width=4pt]
+    ($ (current page.north west) + (1cm,-1cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+\draw[line width=1.5pt]
+    ($ (current page.north west) + (1.2cm,-1.2cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.2cm,1.2cm) $);
+\end{tikzpicture}
+
+
+\tikz[remember picture,overlay] \node[opacity=0.1,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth]{livro-aberto}};
+
+	\centering % Centre everything on the title page
+	
+	\scshape % Use small caps for all text on the title page
+	
+	\vspace*{\baselineskip} % White space at the top of the page
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+	\vspace{0.75\baselineskip} % Whitespace above the title
+	
+	{\LARGE LIVRO ABERTO \\ DE\\ MATEMÁTICA\\} % Title
+	
+	\vspace{0.75\baselineskip} % Whitespace below the title
+	
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+	
+	\vspace{2\baselineskip} % Whitespace after the title block
+	
+	%------------------------------------------------
+	%	Subtitle
+	%------------------------------------------------
+	
+	ensino médio - versão 0.1 % Subtitle or further description
+	
+	\vspace*{5\baselineskip} % Whitespace under the subtitle
+	
+	%------------------------------------------------
+	%	Editor(s)
+	%------------------------------------------------
+
+\begin{minipage}{.5\textwidth}
+
+
+{\centering	autores}
+	
+	\vspace{0.65\baselineskip} % Whitespace before the editors
+	
+	\listofauthors % Editor list
+	
+	\vspace{0.5\baselineskip}
+\end{minipage}\hfill
+\begin{minipage}{.35\textwidth}
+
+
+	revisão
+	
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+	
+	\listofreferees
+\end{minipage}
+	
+	\vspace{5\baselineskip} % Whitespace below the editor list
+	
+
+	
+	\textit{Instituto de Matemática Pura e Aplicada \\ Rio de Janeiro} % Editor affiliation
+	
+	\vfill % Whitespace between editor names and publisher logo
+	
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	
+	patrocínio
+	
+	\includegraphics[width=2cm]{itau} % Publisher logo
+	
+	\vspace{1\baselineskip} % Whitespace under the publisher logo
+	
+	\today % Publication year
+	
+	{\large OBMEP} % Publisher
+
+\end{titlepage}
+}
+
