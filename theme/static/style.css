@@ -1,0 +1,1010 @@
+@charset "utf-8";
+
+/* 	Desenvolvido por GeniusDesign Comunicação e Marketing Digital
+
+	Eugênio Telles, especialista em marketing digital
+
+	www.geniusdesign.com.br
+
+	contato@geniusdesign.com.br
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Orbitron|Roboto');
+
+
+
+html {-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+
+html,
+
+body {width: 100%;}
+
+body {font-family: 'Exo 2', sans-serif; font-size: 16px; background: #f4f4f4;}
+
+
+
+/* ELEMENTOS HTML */
+
+h1,
+
+h2,
+
+h3,
+
+h4 {font-family: 'Orbitron', sans-serif!important;}
+
+h4 {text-decoration: underline; color: #777!important;}
+
+
+
+figcaption {font-size: 12px;}
+
+
+
+table {border-collapse: collapse; width: 100%;}
+
+table thead tr {background: #a0a4ac;}
+
+table thead tr th,
+
+table thead tr td {background: #a0a4ac; color: #fff; font-weight: bold;}
+
+table th,
+
+table td {border: 1px solid #666b73; text-align: center; padding:0 5px;}
+
+
+
+blockquote {padding-left:40px; font-size:14px!important; text-align:justify; color:inherit; font-style:normal!important;}
+
+
+
+main img {width:100%;}
+
+
+
+li {margin-bottom:15px; text-align:justify;}
+
+
+
+ul.uk-accordion {padding: 35px 25px 0 25px!important; border-radius: 0 15px 0 0!important;}
+
+ul.uk-accordion > li {margin-bottom: 0; list-style: none;}
+
+ul.uk-accordion > li > h2 {z-index: 2;}
+
+ul.uk-accordion > li > a.uk-accordion-title {position: absolute; right: 0; top: 0; width: 100%; height: 35px; border-radius: 0 15px 0 0; z-index: 1; border-bottom: 1px solid transparent}
+
+ul.uk-accordion > li > a.uk-accordion-title:hover {background: rgba(11, 167, 167, 0.1); border-color: rgba(11, 167, 167, 0.2);}
+
+ul.uk-accordion > li > a.uk-accordion-title:after {line-height: 35px; height: 35px; width: 35px; margin-right: 20px;}
+
+ul.uk-accordion > li > .uk-accordion-content {margin-bottom: 20px; z-index: 2;}
+
+
+
+/* TÓPICOS */
+
+.topico {margin-bottom:50px; display: table; padding: 50px; background: #fff; box-shadow: 0 0 10px rgba(150,150,150,0.1); border-radius: 5px; position: relative;}
+
+
+
+.topico .lista-alpha li:before {color: #0ba7a7; font-weight: bold;}
+
+
+
+.topico h2 {border-bottom: 2px solid transparent; border-radius: 0 0 0 8px; font-weight: bold; font-size: 20px; color:#666;}
+
+.topico h2 span {padding: 5px 10px; text-transform: uppercase; border-radius: 0 8px 0 8px; font-weight: normal; margin-right: 10px; display: inline-block;}
+
+.topico h3 {font-size: 18px; color: #0ba7a7;}
+
+
+
+.topico h3.atividade {border-bottom: 1px solid #91959d; position: relative; border-radius: 0 0 5px 0;}
+
+.topico h3.atividade:after {position: absolute; right: 0; bottom: 0; padding: 2px 8px; border-radius: 5px 5px 5px 0; color: #fff; background: #91959d; content: "Atividade"; font-size: 13px;}
+
+.topico h3.atividade:before {position: absolute; left: -8px; bottom: -11px; width:8px; height: 10px; border-radius: 10px 0 0 0; border-left: 1px solid #91959d; border-top: 1px solid #91959d; display: block; content: "";}
+
+
+
+.topico p {text-align: justify;}
+
+
+
+
+
+/*FORMATAÇÃO POR TÓPICOS */
+
+.explorando h2 {border-color: #0066ad; color: #0066ad;}
+
+.explorando h2 span {background: #0066ad; color: #fff;}
+
+.explorando h3 {color: #0066ad;}
+
+.explorando .lista-alpha li:before {color: #0066ad; font-weight: bold;}
+
+
+
+.praticando h2 {border-color: #7bac39; color: #7bac39;}
+
+.praticando h2 span {background: #7bac39; color: #fff;}
+
+.praticando h3 {color: #7bac39;}
+
+.praticando .lista-alpha li:before {color: #7bac39; font-weight: bold;}
+
+
+
+.para-saber-mais h2 {border-color: #a60f29; color: #a60f29;}
+
+.para-saber-mais h2 span {background: #a60f29; color: #fff;}
+
+.para-saber-mais h3 {color: #a60f29;}
+
+.para-saber-mais .lista-alpha li:before {color: #a60f29; font-weight: bold;}
+
+
+
+.organizando h2 {border-color: #ed8600; color: #ed8600;}
+
+.organizando h2 span {background: #ed8600; color: #fff;}
+
+.organizando h3 {color: #ed8600;}
+
+.organizando .lista-alpha li:before {color: #ed8600; font-weight: bold;}
+
+
+
+.material-suplementar {border-top:50px solid #d2dde5; border-radius:10px 30px 0 0; background:#fdfcef;}
+
+.material-suplementar:before {position: absolute; right: 50px; top: -35px; padding: 2px 8px; border-radius: 5px 5px 5px 0; color: #718998; content: "Material Suplementar"; font-size: 14px; text-transform:uppercase;}
+
+.material-suplementar h3 {font-size:23px; color:#718998; font-weight:bold;}
+
+
+
+.exemplo.topico {border: 2px solid #0ba7a7; border-radius: 0 30px 0 0; padding: 40px 25px 25px;}
+
+.exemplo h2 {border-color: transparent; background: #e3efef; color: #666; display: inline-block; font-weight: normal; position: absolute; top: 0; left: 0; padding-right: 20px; font-size: 16px;}
+
+.exemplo h2 span {background: #0ba7a7; color: #fff; border-radius: 0 0 10px 0;}
+
+
+
+.exercicios {border-top:2px solid #636c73;}
+
+.exercicios h2 {position:absolute; width:150px; top:-22px; left:50%; margin-left:-75px; background:#0ba7a7; color:#fff; text-align:center; text-transform:uppercase; border-radius:0 8px 0 8px; padding:5px 0; border:2px solid #636c73;}
+
+.exercicios:before {position: absolute; left: -2px; top: -2px; width: 8px; height: 20px; border-radius: 8px 0 0 0; border-left: 2px solid #636c73; border-top: 2px solid #636c73; display: block; content: "";}
+
+.exercicios:after {position: absolute; right: -2px; top: -2px; width: 8px; height: 20px; border-radius: 0 8px 0 0; border-right: 2px solid #636c73; border-top: 2px solid #636c73; display: block; content: "";}
+
+
+
+.exercicios > .exercicio {position:relative; border-bottom:2px solid #eee; margin-bottom:30px; background:#fafafa; border-top:2px solid #0ba7a7; border-left:1px solid #eee; border-right:1px solid #eee; padding:15px; border-radius:5px 5px 0 0;}
+
+.exercicios > .exercicio > .num-exercicio {position:absolute; width:20px; line-height:20px; background:#0ba7a7; display:block; text-align:center; color:#fff; border-radius:0 5px 0 5px; top:-2px; left:-15px;}
+
+.exercicios > .exercicio > p {margin-top: 0;}
+
+.exercicios > .exercicio ul {list-style: none; padding-left: 0;}
+
+
+
+
+
+.exercicios > ul,
+
+.autoavaliacao > ul {padding-left:0;}
+
+.exercicios > ul,
+
+.exercicios > ul ul,
+
+.autoavaliacao > ul,
+
+.autoavaliacao > ul ul {list-style:none;}
+
+.exercicios > ul ul,
+
+.autoavaliacao > ul ul {padding:0;}
+
+.exercicios > ul > li {position:relative; border-bottom:2px solid #eee; margin-bottom:30px; background:#fafafa; border-top:2px solid #0ba7a7; border-left:1px solid #eee; border-right:1px solid #eee; padding:15px; border-radius:5px 5px 0 0;}
+
+.exercicios > ul > li:before {position:absolute; width:20px; line-height:20px; background:#0ba7a7; display:block; text-align:center; color:#fff; border-radius:0 5px 0 5px; top:-2px; left:-15px;}
+
+.exercicios > ul ul li,
+
+.autoavaliacao > ul ul li {margin-bottom:10px;}
+
+.exercicios > ul ul li:before,
+
+.autoavaliacao > ul ul li:before {font-weight:bold;}
+
+.exercicios label,
+
+.autoavaliacao label {display:block;}
+
+.exercicios input,
+
+.autoavaliacao .uk-radio {margin-right:5px;}
+
+
+
+.exercicios ul.respostas > li {padding: 18px; border-color: #636c73; border-bottom-width: 1px; background: #fafafa;}
+
+.exercicios ul.respostas > li:before {display: none;}
+
+.exercicios ul.respostas > li > h2 {width: 180px; margin-left: -90px; background: #a0a4ac;}
+
+.exercicios ul.respostas > li > a.uk-accordion-title:hover {background: rgba(0,0,0,0.1); border-radius: 5px 5px 0 0; border-bottom-color: rgba(0,0,0,0.1);}
+
+.exercicios ul.respostas > li > .uk-accordion-content {margin-bottom: 0;}
+
+.exercicios ul.respostas > li > .uk-accordion-content > .lista-alpha > li:before {width:20px; line-height:20px; background:#0ba7a7; text-align:center; color:#fff; border-radius:0 5px 0 5px; display: inline-block; margin-right: 5px;}
+
+
+
+.autoavaliacao {border-top: 2px solid #0ba7a7; border-bottom: 2px solid #0ba7a7; border-right: 2px solid #0ba7a7; box-shadow:0 -5px 0 0 #e3efef, 5px 0 0 0 #e3efef, 0 5px 0 0 #e3efef; border-radius:0 5px 5px 0; padding-top:30px;}
+
+.autoavaliacao .titulo {position:absolute; top:-30px; left:0;}
+
+.autoavaliacao .titulo h2 {background:#0ba7a7; color:#fff; position:relative; line-height:30px; padding:0 20px; border:none; border-radius:5px 0 0 0; text-transform:uppercase; font-size:18px;}
+
+.autoavaliacao .titulo h2:after {border-right: 30px solid transparent; border-top: none; border-bottom: 30px solid #0ba7a7; position:absolute; top:0; right:-30px; display:block; content:"";}
+
+.autoavaliacao > ul > li {position:relative; margin-bottom:15px;}
+
+.autoavaliacao > ul > li:before {position:absolute; width:20px; line-height:20px; background:#0ba7a7; display:block; text-align:center; color:#fff; border-radius:0 5px 0 5px; top:0; left:-25px;}
+
+
+
+.referencias h2 {text-transform:uppercase;}
+
+.referencias ul {list-style:none; padding:0 0 0 15px;}
+
+.referencias ul li {margin-bottom:13px; word-break: break-all;}
+
+.referencias ul li:first-letter {margin-left:-15px;}
+
+
+
+.topico.box-destaque {border: 2px solid #6b1766; border-radius: 0 30px 0 0; padding: 40px 25px 25px; background:#fafafa; width: calc(100% - 50px);}
+
+.topico.box-destaque h2 {border-color: transparent; background: #6b1766; color: #fff; display: inline-block; font-weight: normal; position: absolute; top: 0; left: 0; border-radius: 0; font-size:18px;}
+
+.topico.box-destaque h2 span {position:relative; display:block; padding:5px 20px; background: none;}
+
+.topico.box-destaque h2 span:after {position:absolute; right:-50px; bottom:-2px; width:54px; height:54px; display:block;}
+
+
+
+.topico.box-destaque.para-refletir h2 span:after {content:url(../images/ico-box-destaque-para-refletir.png);}
+
+.topico.box-destaque.para-pesquisar h2 span:after {content:url(../images/ico-box-destaque-para-pesquisar.png);}
+
+.topico.box-destaque.voce-sabia h2 span:after {content:url(../images/ico-box-destaque-voce-sabia.png);}
+
+
+
+.topico > .exemplo,
+
+.topico > .topico {margin-bottom: 30px;}
+
+
+
+
+
+/* PROJETO APLICADO */
+
+.projeto-aplicado {margin-bottom:100px; background: #d2dde5; padding-bottom: 10px;}
+
+.projeto-aplicado h2 {background: #666b73; color: #d2dde5; text-transform: uppercase; display: inline-block; border-radius: 0 8px 0 8px; font-size: 20px; padding: 10px 20px; margin: 0; font-weight: bold; margin-top: -20px;}
+
+.projeto-aplicado h3 {font-size: 18px; font-family: 'Exo 2', sans-serif!important; font-weight: bold;}
+
+.projeto-aplicado article {background: #f1f5f7; margin: 0 30px 30px 30px; padding: 50px; border-radius: 0 15px 15px 15px; text-align:justify;}
+
+.projeto-aplicado .lista-alpha li {margin-bottom: 15px;}
+
+.projeto-aplicado .lista-alpha li:before {color: #636c73; background: #d2dde5; font-weight: normal; padding: 0 5px; line-height: 25px; display: inline-block; margin-right: 5px; font-family: 'Orbitron', sans-serif;}
+
+
+
+
+
+/* SEÇÕES DO LAYOUT */
+
+header {width:100%; max-width:100%; height: 100px; background: #e4e4e4; padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,0.7); box-shadow: 0 1px 0 rgba(0,0,0,0.1); display: table;}
+
+header.uk-sticky {padding:0;}
+
+header img {float: right; height: 100%;}
+
+header nav {font-family: 'Orbitron', sans-serif; margin-right: 15px; margin-top: 30px; float: left;}
+
+header nav .nav-capitulo {background:#666b73; color: #fff; padding-right: 0;}
+
+header nav .nav-capitulo span {background:#4ea5a6; width:38px; display: inline-block; margin-left: 30px;}
+
+header h1 {color: #666b73; margin: 0; font-size: 25px; float: left; line-height: 40px; margin-top: 30px;}
+
+
+
+main {padding: 50px 0 100px 0;}
+
+
+
+footer {position: fixed; bottom: 0; left: 0; width:100%; height: 60px; background: #e4e4e4; border-top: 1px solid rgba(255,255,255,0.7); box-shadow: 0 -1px 0 rgba(0,0,0,0.1);}
+
+
+
+
+
+/* CLASSES PERSONALIZADAS */
+
+.observacao {color: #000; background: #fde9ac; padding: 20px; border-radius: 8px 0 8px 0;}
+
+
+
+.instrucao-professor {position: absolute; top: 0; right: 0;}
+
+.instrucao-professor.uk-sticky.uk-active {width: auto;}
+
+
+
+.table-right {width: 50%; float: right; margin-left: 25px;}
+
+.table-left {width: 50%; float: left; margin-right: 25px;}
+
+
+
+
+
+/* TRANSITION */
+
+ul.uk-accordion > li > a.uk-accordion-title,
+
+ul.uk-accordion > li > a.uk-accordion-title:hover {transition:all linear 0.2s;}
+
+
+
+
+
+/* AJUSTES MOBILE */
+
+@media (max-width: 640px) {
+
+	header,
+
+	header img {height:60px;}
+
+	header nav,
+
+	header h1 {margin-top:10px;}
+
+	header h1 {font-size:20px;}
+
+	header nav .nav-capitulo {font-size:0; padding-left:0;}
+
+	header nav .nav-capitulo span {font-size:16px; margin-left:0; display: block; float: left;}
+
+	main {padding:0!important; margin-bottom:20px;}
+
+	.topico {padding:20px;}
+
+	.topico h3.atividade {margin-bottom:25px;}
+
+	.topico h3.atividade:after {bottom:-19px; border-radius:0 0 5px 5px; font-size:11px;}
+
+	.table-right,
+
+	.table-left,
+
+	.uk-align-right,
+
+	.uk-align-left {float:none; width:100%;}
+
+	.table-right {margin-left:0;}
+
+	.table-left	{margin-right:0;}
+
+	.projeto-aplicado article {margin: 0 15px 15px 15px; padding: 15px;}
+
+}
+
+
+
+.lista-alpha {list-style: none; padding-left:0;}
+
+.lista-alpha li:nth-child(1):before,
+
+.exercicios > .exercicio ul > li:nth-child(1):before,
+
+.autoavaliacao ul ul > li:nth-child(1):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li > ul > li:nth-child(1):before {content:"a) "}
+
+.lista-alpha li:nth-child(2):before,
+
+.exercicios > .exercicio ul > li:nth-child(2):before,
+
+.autoavaliacao ul ul > li:nth-child(2):before {content:"b) "}
+
+.lista-alpha li:nth-child(3):before,
+
+.exercicios > .exercicio ul > li:nth-child(3):before,
+
+.autoavaliacao ul ul > li:nth-child(3):before {content:"c) "}
+
+.lista-alpha li:nth-child(4):before,
+
+.exercicios > .exercicio ul > li:nth-child(4):before,
+
+.autoavaliacao ul ul > li:nth-child(4):before {content:"d) "}
+
+.lista-alpha li:nth-child(5):before,
+
+.exercicios > .exercicio ul > li:nth-child(5):before,
+
+.autoavaliacao ul ul > li:nth-child(5):before {content:"e) "}
+
+.lista-alpha li:nth-child(6):before,
+
+.exercicios > .exercicio ul > li:nth-child(6):before,
+
+.autoavaliacao ul ul > li:nth-child(6):before {content:"f) "}
+
+.lista-alpha li:nth-child(7):before,
+
+.exercicios > .exercicio ul > li:nth-child(7):before,
+
+.autoavaliacao ul ul > li:nth-child(7):before {content:"g) "}
+
+.lista-alpha li:nth-child(8):before,
+
+.exercicios > .exercicio ul > li:nth-child(8):before,
+
+.autoavaliacao ul ul > li:nth-child(8):before {content:"h) "}
+
+.lista-alpha li:nth-child(9):before,
+
+.exercicios > .exercicio ul > li:nth-child(9):before,
+
+.autoavaliacao ul ul > li:nth-child(9):before {content:"i) "}
+
+.lista-alpha li:nth-child(10):before,
+
+.exercicios > .exercicio ul > li:nth-child(10):before,
+
+.autoavaliacao ul ul > li:nth-child(10):before {content:"j) "}
+
+.lista-alpha li:nth-child(11):before,
+
+.exercicios > .exercicio ul > li:nth-child(11):before,
+
+.autoavaliacao ul ul > li:nth-child(11):before {content:"k) "}
+
+.lista-alpha li:nth-child(12):before,
+
+.exercicios > .exercicio ul > li:nth-child(12):before,
+
+.autoavaliacao ul ul > li:nth-child(12):before {content:"l) "}
+
+.lista-alpha li:nth-child(13):before,
+
+.exercicios > .exercicio ul > li:nth-child(13):before,
+
+.autoavaliacao ul ul > li:nth-child(13):before {content:"m) "}
+
+.lista-alpha li:nth-child(14):before,
+
+.exercicios > .exercicio ul > li:nth-child(14):before,
+
+.autoavaliacao ul ul > li:nth-child(14):before {content:"n) "}
+
+.lista-alpha li:nth-child(15):before,
+
+.exercicios > .exercicio ul > li:nth-child(15):before,
+
+.autoavaliacao ul ul > li:nth-child(15):before {content:"o) "}
+
+.lista-alpha li:nth-child(16):before,
+
+.exercicios > .exercicio ul > li:nth-child(16):before,
+
+.autoavaliacao ul ul > li:nth-child(16):before {content:"p) "}
+
+.lista-alpha li:nth-child(17):before,
+
+.exercicios > .exercicio ul > li:nth-child(17):before,
+
+.autoavaliacao ul ul > li:nth-child(17):before {content:"q) "}
+
+.lista-alpha li:nth-child(18):before,
+
+.exercicios > .exercicio ul > li:nth-child(18):before,
+
+.autoavaliacao ul ul > li:nth-child(18):before {content:"r) "}
+
+.lista-alpha li:nth-child(19):before,
+
+.exercicios > .exercicio ul > li:nth-child(19):before,
+
+.autoavaliacao ul ul > li:nth-child(19):before {content:"s) "}
+
+.lista-alpha li:nth-child(20):before,
+
+.exercicios > .exercicio ul > li:nth-child(20):before,
+
+.autoavaliacao ul ul > li:nth-child(20):before {content:"t) "}
+
+.lista-alpha li:nth-child(21):before,
+
+.exercicios > .exercicio ul > li:nth-child(21):before,
+
+.autoavaliacao ul ul > li:nth-child(21):before {content:"u) "}
+
+.lista-alpha li:nth-child(22):before,
+
+.exercicios > .exercicio ul > li:nth-child(22):before,
+
+.autoavaliacao ul ul > li:nth-child(22):before {content:"v) "}
+
+.lista-alpha li:nth-child(23):before,
+
+.exercicios > .exercicio ul > li:nth-child(23):before,
+
+.autoavaliacao ul ul > li:nth-child(23):before {content:"x) "}
+
+.lista-alpha li:nth-child(24):before,
+
+.exercicios > .exercicio ul > li:nth-child(24):before,
+
+.autoavaliacao ul ul > li:nth-child(24):before {content:"w) "}
+
+.lista-alpha li:nth-child(25):before,
+
+.exercicios > .exercicio ul > li:nth-child(25):before,
+
+.autoavaliacao ul ul > li:nth-child(25):before {content:"y) "}
+
+.lista-alpha li:nth-child(26):before,
+
+.exercicios > .exercicio ul > li:nth-child(26):before,
+
+.autoavaliacao ul ul > li:nth-child(26):before {content:"z) "}
+
+
+
+.projeto-aplicado .lista-alpha {list-style: none; padding-left:0;}
+
+.projeto-aplicado .lista-alpha li:nth-child(1):before {content:"a "}
+
+.projeto-aplicado .lista-alpha li:nth-child(2):before {content:"b "}
+
+.projeto-aplicado .lista-alpha li:nth-child(3):before {content:"c "}
+
+.projeto-aplicado .lista-alpha li:nth-child(4):before {content:"d "}
+
+.projeto-aplicado .lista-alpha li:nth-child(5):before {content:"e "}
+
+.projeto-aplicado .lista-alpha li:nth-child(6):before {content:"f "}
+
+.projeto-aplicado .lista-alpha li:nth-child(7):before {content:"g "}
+
+.projeto-aplicado .lista-alpha li:nth-child(8):before {content:"h "}
+
+.projeto-aplicado .lista-alpha li:nth-child(9):before {content:"i "}
+
+.projeto-aplicado .lista-alpha li:nth-child(10):before {content:"j "}
+
+.projeto-aplicado .lista-alpha li:nth-child(11):before {content:"k "}
+
+.projeto-aplicado .lista-alpha li:nth-child(12):before {content:"l "}
+
+.projeto-aplicado .lista-alpha li:nth-child(13):before {content:"m "}
+
+.projeto-aplicado .lista-alpha li:nth-child(14):before {content:"n "}
+
+.projeto-aplicado .lista-alpha li:nth-child(15):before {content:"o "}
+
+.projeto-aplicado .lista-alpha li:nth-child(16):before {content:"p "}
+
+.projeto-aplicado .lista-alpha li:nth-child(17):before {content:"q "}
+
+.projeto-aplicado .lista-alpha li:nth-child(18):before {content:"r "}
+
+.projeto-aplicado .lista-alpha li:nth-child(19):before {content:"s "}
+
+.projeto-aplicado .lista-alpha li:nth-child(20):before {content:"t "}
+
+.projeto-aplicado .lista-alpha li:nth-child(21):before {content:"u "}
+
+.projeto-aplicado .lista-alpha li:nth-child(22):before {content:"v "}
+
+.projeto-aplicado .lista-alpha li:nth-child(23):before {content:"x "}
+
+.projeto-aplicado .lista-alpha li:nth-child(24):before {content:"w "}
+
+.projeto-aplicado .lista-alpha li:nth-child(25):before {content:"y "}
+
+.projeto-aplicado .lista-alpha li:nth-child(26):before {content:"z "}
+
+
+
+.exercicios > ul > li:nth-child(1):before,
+
+.autoavaliacao > ul > li:nth-child(1):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(1):before {content:"1"}
+
+.exercicios > ul > li:nth-child(2):before,
+
+.autoavaliacao > ul > li:nth-child(2):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(2):before {content:"2"}
+
+.exercicios > ul > li:nth-child(3):before,
+
+.autoavaliacao > ul > li:nth-child(3):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(3):before {content:"3"}
+
+.exercicios > ul > li:nth-child(4):before,
+
+.autoavaliacao > ul > li:nth-child(4):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(4):before {content:"4"}
+
+.exercicios > ul > li:nth-child(5):before,
+
+.autoavaliacao > ul > li:nth-child(5):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(5):before {content:"5"}
+
+.exercicios > ul > li:nth-child(6):before,
+
+.autoavaliacao > ul > li:nth-child(6):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(6):before {content:"6"}
+
+.exercicios > ul > li:nth-child(7):before,
+
+.autoavaliacao > ul > li:nth-child(7):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(7):before {content:"7"}
+
+.exercicios > ul > li:nth-child(8):before,
+
+.autoavaliacao > ul > li:nth-child(8):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(8):before  {content:"8"}
+
+.exercicios > ul > li:nth-child(9):before,
+
+.autoavaliacao > ul > li:nth-child(9):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(9):before  {content:"9"}
+
+.exercicios > ul > li:nth-child(10):before,
+
+.autoavaliacao > ul > li:nth-child(10):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(10):before  {content:"9"}
+
+.exercicios > ul > li:nth-child(11):before,
+
+.autoavaliacao > ul > li:nth-child(11):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(11):before  {content:"11"}
+
+.exercicios > ul > li:nth-child(12):before,
+
+.autoavaliacao > ul > li:nth-child(12):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(12):before  {content:"12"}
+
+.exercicios > ul > li:nth-child(13):before,
+
+.autoavaliacao > ul > li:nth-child(13):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(13):before  {content:"13"}
+
+.exercicios > ul > li:nth-child(14):before,
+
+.autoavaliacao > ul > li:nth-child(14):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(14):before  {content:"14"}
+
+.exercicios > ul > li:nth-child(15):before,
+
+.autoavaliacao > ul > li:nth-child(15):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(15):before  {content:"15"}
+
+.exercicios > ul > li:nth-child(16):before,
+
+.autoavaliacao > ul > li:nth-child(16):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(16):before  {content:"16"}
+
+.exercicios > ul > li:nth-child(17):before,
+
+.autoavaliacao > ul > li:nth-child(17):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(17):before  {content:"17"}
+
+.exercicios > ul > li:nth-child(18):before,
+
+.autoavaliacao > ul > li:nth-child(18):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(18):before  {content:"18"}
+
+.exercicios > ul > li:nth-child(19):before,
+
+.autoavaliacao > ul > li:nth-child(19):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(19):before  {content:"19"}
+
+.exercicios > ul > li:nth-child(20):before,
+
+.autoavaliacao > ul > li:nth-child(20):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(20):before  {content:"20"}
+
+.exercicios > ul > li:nth-child(21):before,
+
+.autoavaliacao > ul > li:nth-child(21):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(21):before  {content:"21"}
+
+.exercicios > ul > li:nth-child(22):before,
+
+.autoavaliacao > ul > li:nth-child(22):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(22):before  {content:"22"}
+
+.exercicios > ul > li:nth-child(23):before,
+
+.autoavaliacao > ul > li:nth-child(23):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(23):before  {content:"23"}
+
+.exercicios > ul > li:nth-child(24):before,
+
+.autoavaliacao > ul > li:nth-child(24):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(24):before  {content:"24"}
+
+.exercicios > ul > li:nth-child(25):before,
+
+.autoavaliacao > ul > li:nth-child(25):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(25):before  {content:"25"}
+
+.exercicios > ul > li:nth-child(26):before,
+
+.autoavaliacao > ul > li:nth-child(26):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(26):before  {content:"26"}
+
+.exercicios > ul > li:nth-child(27):before,
+
+.autoavaliacao > ul > li:nth-child(27):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(27):before  {content:"27"}
+
+.exercicios > ul > li:nth-child(28):before,
+
+.autoavaliacao > ul > li:nth-child(28):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(28):before  {content:"28"}
+
+.exercicios > ul > li:nth-child(29):before,
+
+.autoavaliacao > ul > li:nth-child(29):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(29):before  {content:"29"}
+
+.exercicios > ul > li:nth-child(30):before,
+
+.autoavaliacao > ul > li:nth-child(30):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(30):before  {content:"30"}
+
+.exercicios > ul > li:nth-child(31):before,
+
+.autoavaliacao > ul > li:nth-child(31):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(31):before  {content:"31"}
+
+.exercicios > ul > li:nth-child(32):before,
+
+.autoavaliacao > ul > li:nth-child(32):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(32):before  {content:"32"}
+
+.exercicios > ul > li:nth-child(33):before,
+
+.autoavaliacao > ul > li:nth-child(33):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(33):before  {content:"33"}
+
+.exercicios > ul > li:nth-child(34):before,
+
+.autoavaliacao > ul > li:nth-child(34):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(34):before  {content:"34"}
+
+.exercicios > ul > li:nth-child(35):before,
+
+.autoavaliacao > ul > li:nth-child(35):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(35):before  {content:"35"}
+
+.exercicios > ul > li:nth-child(36):before,
+
+.autoavaliacao > ul > li:nth-child(36):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(36):before  {content:"36"}
+
+.exercicios > ul > li:nth-child(37):before,
+
+.autoavaliacao > ul > li:nth-child(37):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(37):before  {content:"37"}
+
+.exercicios > ul > li:nth-child(38):before,
+
+.autoavaliacao > ul > li:nth-child(38):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(38):before  {content:"38"}
+
+.exercicios > ul > li:nth-child(39):before,
+
+.autoavaliacao > ul > li:nth-child(39):before,
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(39):before  {content:"39"}
+
+
+
+/*
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(1):before {content:"1) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(2):before {content:"2) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(3):before {content:"3) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(4):before {content:"4) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(5):before {content:"5) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(6):before {content:"6) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(7):before {content:"7) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(8):before {content:"8) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(9):before {content:"9) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(10):before {content:"9) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(11):before {content:"11) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(12):before {content:"12) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(13):before {content:"13) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(14):before {content:"14) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(15):before {content:"15) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(16):before {content:"16) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(17):before {content:"17) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(18):before {content:"18) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(19):before {content:"19) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(20):before {content:"20) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(21):before {content:"21) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(22):before {content:"22) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(23):before {content:"23) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(24):before {content:"24) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(25):before {content:"25) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(26):before {content:"26) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(27):before {content:"27) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(28):before {content:"28) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(29):before {content:"29) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(30):before {content:"30) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(31):before {content:"31) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(32):before {content:"32) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(33):before {content:"33) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(34):before {content:"34) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(35):before {content:"35) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(36):before {content:"36) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(37):before {content:"37) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(38):before {content:"38) "}
+
+.exercicios > ul.respostas ul.lista-alpha > li:nth-child(39):before {content:"39) "}
+
+*/
+
+
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+
+a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+
+dfn{font-style:italic}mark{background:#ff0;color:#000}
+
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}svg:not(:root){overflow:hidden}
+
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+
+button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+
+button,input{overflow:visible}button,select{text-transform:none}
+
+button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+
+[type=checkbox],[type=radio]{padding:0}
+
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+
+::-webkit-input-placeholder{color:inherit;opacity:0.54}
+
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+/* End extract */
+
