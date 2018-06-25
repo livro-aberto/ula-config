@@ -17,6 +17,8 @@ import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
+sys.path.insert(0, os.path.join(current_directory, 'extensions/tikz/sphinxcontrib'))
+
 html_theme = 'theme'
 html_theme_path = [current_directory]
 html_static_path = [os.path.join(current_directory, 'theme', 'static')]
